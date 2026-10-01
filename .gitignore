@@ -1,0 +1,69 @@
+# Operating system and editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.crt
+
+# Logs
+*.log
+logs/
+
+# Frontend
+frontend/node_modules/
+frontend/.npm-cache/
+frontend/dist/
+frontend/.vite/
+frontend/coverage/
+
+# Java / Spring Boot
+backend/target/
+backend/.mvn/wrapper/maven-wrapper.jar
+backend/.mvn/wrapper/MavenWrapperDownloader.java
+
+# Python
+ml-service/.venv/
+ml-service/venv/
+ml-service/__pycache__/
+ml-service/.pytest_cache/
+ml-service/.mypy_cache/
+ml-service/.ruff_cache/
+*.py[cod]
+
+# Data and generated ML artifacts
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+models/*
+!models/.gitkeep
+*.joblib
+*.pkl
+*.keras
+*.h5
+*.pt
+*.onnx
+
+# Docker and build caches
+.docker/
+docker-volume-data/
+.tools/
+data/local/
+
+# Local frontend installs
+frontend/package-lock.json
+
+# Test and coverage artifacts
+coverage/
+htmlcov/
+junit.xml
+test-results/
